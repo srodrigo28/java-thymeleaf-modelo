@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -13,12 +13,24 @@
         <h1>Java Frontend</h1>
         <h2>ThymeLife :: Cadastro</h2>
     </div>
-    <form  method="post">
-        <input type="text" class="form-control"           name="nome"  placeholder="Nome completo" >
-        <input type="text" class="form-control mt-3 mb-3" name="email" placeholder="E-mail" >
+    <form  method="POST">
+        <input 
+            name="nome"
+            type="text" 
+            class="form-control"
+            placeholder="Nome completo" 
+        />
+        <input 
+            name="email" 
+            type="text" 
+            placeholder="E-mail" 
+            class="form-control mt-3 mb-3" 
+        />
         <div class="grup-btn d-flex justify-content-center w-full gap-5">
             <button type="submit" class="btn btn-primary w-25">Cadastrar</button>
+
             <a href="/categoria" class="btn btn-success w-25"> Categoria </a>
+
             <a href="/" class="btn btn-danger w-25"> Voltar </a>
         </div>
     </form>
