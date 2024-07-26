@@ -12,8 +12,13 @@ import com.sebapp.appmain.dto.ClienteDTO;
 public class CadastroController {
     
     @GetMapping("/cadastro")
-	public String index() {
+	public String cadastro() {
 		return "cadastro/index";
+	}
+
+	@GetMapping("/categoria")
+	public String categoria() {
+		return "categoria/index";
 	}
 
 	@PostMapping("/cadastro")
@@ -25,9 +30,9 @@ public class CadastroController {
 
 	@PostMapping("/categoria")
 	public String categoria(@RequestBody CategoriaDTO categoriaDTO ){
-		System.out.println("" + categoriaDTO.getCategoria());
-		System.out.println("" + categoriaDTO.getDescricao());
+		System.out.println("Categoria: " + categoriaDTO.getCategoria());
+		System.out.println("Descrição: " + categoriaDTO.getDescricao());
 
-		return "redirect:/";
+		return "index";
 	}
 }
