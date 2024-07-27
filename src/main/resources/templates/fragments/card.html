@@ -1,0 +1,9 @@
+<div class="card mt-3 w-25" th:fragment="card (title, content, preco)"> <!-- passagem de props  -->
+    <div class="card-title bg-primary p-3 text-white rounded">
+        <h3 th:text="${title}" class="text-center"></h3> <!-- recebi de props title  -->
+    </div>
+    <div class="card-content p-3 d-flex flex-column align-items-center">
+        <p th:text="${content}"> </p> <!-- recebi de props content  -->
+        <p th:text="${preco}" class="bg-info p-2 w-50 text-center text-white fw-bold rounded"></p>
+    </div>
+</div>

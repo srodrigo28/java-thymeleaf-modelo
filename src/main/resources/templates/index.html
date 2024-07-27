@@ -21,5 +21,12 @@
 
     <a href="/cadastro" class="btn btn-success"> Cadastro </a>
     <a href="/categoria" class="btn btn-primary"> Categoria </a>
+
+    <div class="d-flex gap-5">
+        <div th:replace="~{fragments/card :: card ('Notebook Dell', 'Core i9, SSD 2TB,  Memória 64GB, Tela 15', 'R$ 7.000,00')}"> </div>
+        <div th:replace="~{fragments/card :: card ('Notebook Dell', 'Core i7, SSD 2TB,  Memória 32GB, Tela 15', 'R$ 7.000,00')}"> </div>
+    
+
+    </div>
 </body>
 </html>
